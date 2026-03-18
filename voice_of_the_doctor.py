@@ -18,7 +18,7 @@ def text_to_speech_with_gtts_old(input_text, output_filepath):
 
 
 input_text="Hi this is Ai with Hassan!"
-text_to_speech_with_gtts_old(input_text=input_text, output_filepath="gtts_testing.mp3")
+#text_to_speech_with_gtts_old(input_text=input_text, output_filepath="gtts_testing.mp3")
 
 #Step1b: Setup Text to Speech–TTS–model with ElevenLabs
 import elevenlabs
@@ -64,6 +64,7 @@ def text_to_speech_with_gtts(input_text, output_filepath):
             raise OSError("Unsupported operating system")
     except Exception as e:
         print(f"An error occurred while trying to play the audio: {e}")
+    return output_filepath
 
 
 input_text="Hi this is Ai with Hassan, autoplay testing!"
@@ -91,5 +92,6 @@ def text_to_speech_with_elevenlabs(input_text, output_filepath):
             raise OSError("Unsupported operating system")
     except Exception as e:
         print(f"An error occurred while trying to play the audio: {e}")
+    return output_filepath
 
 #text_to_speech_with_elevenlabs(input_text, output_filepath="elevenlabs_testing_autoplay.mp3")
