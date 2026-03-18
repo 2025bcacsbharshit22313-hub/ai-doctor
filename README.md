@@ -2,6 +2,32 @@
 
 This guide provides step-by-step instructions to set up your project environment, including the installation of FFmpeg and PortAudio across macOS, Linux, and Windows, as well as setting up a Python virtual environment using Pipenv, pip, or conda.
 
+## Quick Start
+
+1. Install system packages first (Linux):
+```bash
+sudo apt update
+sudo apt install ffmpeg portaudio19-dev
+```
+
+2. Create and activate a virtual environment, then install dependencies:
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+3. Set required API keys:
+```bash
+export GROQ_API_KEY="your_groq_api_key"
+export ELEVEN_API_KEY="your_elevenlabs_api_key"
+```
+
+4. Run the app:
+```bash
+python gradio_app.py
+```
+
 ## Table of Contents
 
 1. [Installing FFmpeg and PortAudio](#installing-ffmpeg-and-portaudio)
@@ -151,4 +177,3 @@ python voice_of_the_doctor.py
 ```
 python gradio_app.py
 ```
-
