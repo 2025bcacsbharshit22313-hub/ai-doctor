@@ -4,7 +4,7 @@ This guide provides step-by-step instructions to set up your project environment
 
 ## Quick Start
 
-1. Install system packages first (Linux):
+1. Install system packages first (Linux example):
 ```bash
 sudo apt update
 sudo apt install ffmpeg portaudio19-dev
